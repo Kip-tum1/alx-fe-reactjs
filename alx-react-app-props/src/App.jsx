@@ -1,5 +1,5 @@
 import ProfilePage from './ProfilePage';
-import UserContext from './UserContext';
+import {UserContext} from './UserContext';
 
 
 function App() {
@@ -8,7 +8,9 @@ function App() {
   return (
     <div>
       <UserContext/>
-      <username.Provider value={userData}>ProfilePage userData={userData}</username.Provider>      
+      <username.Provider value={userData}>
+        <ProfilePage />
+      </username.Provider>      
     </div>
   )
 }
