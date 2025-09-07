@@ -1,5 +1,5 @@
 import { Link } from "react-router"
-function Nabar(){
+function Navbar(){
     return(
         <div>
             <Link to="/">Home</Link>
@@ -11,4 +11,4 @@ function Nabar(){
     )
 }
 
-export default Nabar
+export default Navbar;

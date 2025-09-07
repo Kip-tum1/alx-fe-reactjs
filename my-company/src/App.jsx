@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Routes, Route } from "react-router";
-import Nabar from "./components/Nabar";
+import Navbar from "./components/Nabar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Services from "./components/Services";
@@ -13,7 +13,7 @@ import Nabar from "./components/Nabar";
 function App(){
   return(
     <>
-     <Nabar />
+     <Navbar />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
