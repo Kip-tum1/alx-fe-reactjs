@@ -7,10 +7,10 @@ function App() {
 
   return (
     <div>
-      <UserContext/>
-      <username.Provider value={userData}>
+      <UserContext />
+      <userContext.Provider value={userData}>
         <ProfilePage />
-      </username.Provider>      
+      </userContext.Provider>      
     </div>
   )
 }
