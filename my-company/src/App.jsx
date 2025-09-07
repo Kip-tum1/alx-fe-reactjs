@@ -1,10 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from "react-router";
 import Nabar from "./components/Nabar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Services from "./components/Services";
+import Contact from "./components/Contact";
 
 import Nabar from "./components/Nabar";
 
