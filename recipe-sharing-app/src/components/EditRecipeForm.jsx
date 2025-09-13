@@ -19,8 +19,8 @@ const EditRecipeForm = ({ recipeId, onClose }) => {
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault(); // Prevent default form submission
+  const handleSubmit = (event) => {
+    event.preventDefault(); // Prevent default form submission
     const updatedRecipe = { ...formData, id: recipeId };
     updateRecipe(updatedRecipe);
     onClose(); // Close the form after submission
