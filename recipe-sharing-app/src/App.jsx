@@ -3,6 +3,8 @@ import AddRecipeForm from "./Components/AddRecipeForm";
 import DeleteRecipeButton from "./components/DeleteRecipeButton";
 import RecipeDetails from "./components/RecipeDetails";
 import EditRecipeForm from "./components/EditRecipeForm";
+import FavoritesList from "./components/FavoritesList";
+import RecipeRecommendations from "./components/RecommendationsList";
 
 
 function App(){
@@ -19,6 +21,7 @@ function App(){
       <DeleteRecipeButton />
       <RecipeDetails />
       <EditRecipeForm />
+      <FavoritesList />
       
 
     </div>
