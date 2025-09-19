@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Home from "./components/Home";
 import axios from 'axios';
+import Search from './components/Search';
+
 
 function App(){
   return(
@@ -8,6 +10,7 @@ function App(){
         <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/" element={<Search />} />
         </Routes>
       </BrowserRouter>
       
