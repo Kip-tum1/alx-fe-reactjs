@@ -1,0 +1,30 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from "react-router";
+import Navbar from "./components/Nabar";
+import Home from "./components/Home";
+import About from "./components/About";
+import Services from "./components/Services";
+import Contact from "./components/Contact";
+
+import Nabar from "./components/Nabar";
+
+function App(){
+  return(
+    <>
+     <Navbar />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Service" element={<Services />} />
+          <Route path="/Contact" element={<Contact />} />
+        </Routes>
+      </BrowserRouter>
+    </>
+  )
+
+}
+
+export default App;
