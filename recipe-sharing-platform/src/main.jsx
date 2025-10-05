@@ -8,3 +8,10 @@ createRoot(document.getElementById('root')).render(
     <App />
   </StrictMode>,
 )
+
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+// import './tailwind.css'; // Import the new Tailwind CSS file
+// import App from './App';
+
+// ReactDOM.render(<App />, document.getElementById('root'));
