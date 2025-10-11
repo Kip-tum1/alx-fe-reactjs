@@ -57,7 +57,7 @@ const RegistrationForm = () => {
 
   const validateForm = () => {
     let tempErrors = {};
-    if (!formData.name) tempErrors.name = 'Name is required';
+    if (!formData.username) tempErrors.username = 'Name is required';
     if (!formData.email) {
       tempErrors.email = 'Email is required';
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
