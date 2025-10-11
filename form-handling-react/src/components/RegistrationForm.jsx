@@ -57,13 +57,13 @@ const RegistrationForm = () => {
 
   const validateForm = () => {
     let tempErrors = {};
-    if (!formData.name) tempErrors.name = 'Name is required';
-    if (!formData.email) {
+    if (!username) tempErrors.name = 'Name is required';
+    if (!email) {
       tempErrors.email = 'Email is required';
-    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+    } else if (!/\S+@\S+\.\S+/.test(email)) {
       tempErrors.email = 'Invalid email address';
     }
-    if (!formData.password) tempErrors.password = 'Password is required';
+    if (!password) tempErrors.password = 'Password is required';
     else if (formData.password.length < 6) tempErrors.password = 'Password must be at least 6 characters';
     return tempErrors;
   };
